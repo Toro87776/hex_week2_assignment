@@ -1,0 +1,289 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 全域設定 */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+	font-family: "Bruno Ace SC", sans-serif;
+    line-height: 1.5;
+	color: #000;
+	letter-spacing:0.5px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    height: auto;
+	vertical-align: middle;
+}
+ul{
+	list-style: none;
+}
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+/* layout-每個頁面都有的像是nav、footer */
+
+/* component元件-結構相同的按鈕 */
+.btn{
+	padding: 12px 24px;
+	border-radius: 32px;
+}
+.btn-light{
+	background: #fff;
+	color: #000;
+}
+.btn-dark{
+	background: #000;
+	color: #fff;
+}
+.animate{
+	transition: transform 0.3s ease; 
+}
+.animate:hover{
+	transform: scale(1.1);
+}
+.navBtn{
+	transition: transform 0.3s ease; 
+}
+.navBtn:hover{
+	transform: scale(1.2);
+	color: #00FFA3;
+}
+
+
+/* page 只有這個頁面的設定*/
+#header{
+	background: #000;
+}
+.nav{
+	padding: 40px 0;
+}
+.people{
+	margin-top: 72px;
+	margin-bottom: 32px;
+}
+#intro{
+	background-image:url('./image/background-img.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+}
+.content1_left{width: 636px;} /*banner*/
+.content1_right{width: 636px;}
+
+.content2_left{width: 526px;} /*intro*/
+.content2_right{width: 746px;}
+
+.content3_left{width: 636px;}/*about me*/
+.content3_right{width: 526px;}
+
+.content4_left{width: 657px;}/*contact me*/
+.content4_right{width: 526px;}
+
+.intxt{
+	margin:36px 0 32px ; /*上 左右 下! 請記得*/
+}
+.sparklesmall li:nth-child(2){
+	margin: 0 16px;
+}
+.sparklebig li:nth-child(2){
+	margin: 0 24px;
+}
+.navBtn{
+	padding: 0px 24px;
+}
+.s_item h2{
+	margin-bottom: 24px;
+}
+.s_item{
+	width: 306px;
+	padding:14px;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+} 
+.lh1x{
+	line-height:44px;
+}
+.content3_right h2{
+	padding-bottom: 36px;
+	margin-top: -36px;
+}
+#contact{
+	background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.sns:nth-of-type(2){
+	margin: 0 20px;
+}
+.snsBtn{
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 40px;
+}
+.snsBtn:hover{
+	box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+	border-radius: 40px;
+	transition:0.5s;
+}
+.project-title{
+	width: 746px;
+	margin-left: auto;
+	margin-bottom: 16px;
+}
+.footer{
+	background: #000;
+}
+.footer-txt{
+	padding: 40px 0;
+}
+
+/* utils*/
+.d-inb{
+	display: inline-block;
+}
+.d-fx{
+	display: flex;
+}
+.fx-column{
+	flex-direction: column;
+}
+.jc-sb{
+	justify-content:space-between;
+}
+.jc-c{
+	justify-content:center;
+}
+.jc-st{
+	justify-content:flex-start;
+}
+.jc-ed{
+	justify-content:flex-end;
+}
+.ai-c{
+	align-items: center;
+}
+.ai-fs{
+	align-items: flex-start;
+}
+.gap{gap: 24px;}
+
+.tac{text-align: center;}
+.tar{text-align: right;}
+.tal{text-align: left;}
+.va-m{
+	vertical-align: middle;
+}
+.ml-a{
+	margin-left: auto;
+}
+.fxw-w{
+	flex-wrap: wrap;
+}
+.p160{
+	padding:160px 0;
+}
+.p96{
+	padding: 96px 0;
+}
+.mt28{
+	margin-top: 28px;
+}
+
+/*色彩樣式*/
+.color-g{
+	color: #00FFA3;
+}
+.color-b{
+	color: #000;
+}
+.color-w{
+	color: #fff;
+}
+.red{
+	border: 1px solid red;
+}
+.blue{
+	border: 1px solid blue;
+}
+
+/*字體樣式*/
+h1{
+	font-size: 128px;
+	line-height: 192px;
+}
+h2{
+	font-size: 64px;
+	line-height: 96px;
+}
+.fz1{
+	font-size: 24px;
+	line-height: 36px;
+}
+.fz2{ /*about me左區 01~04*/
+	font-size: 20px;
+	line-height: 30px;
+}
+.fz3{  /*footer小字*/
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: lighter;
+}
+
+/* JQ滑動效果 */
+#toTop{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	border-radius: 40px;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+}
