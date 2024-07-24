@@ -117,17 +117,18 @@ ul{
 	background-position: center center;
 	background-size:cover;
 }
-.content1_left{width: 636px;} /*banner*/
+/*寫死寬度不好，裝置變小時就會破圖
+.content1_left{width:636px;} 
 .content1_right{width: 636px;}
 
-.content2_left{width: 526px;} /*intro*/
+.content2_left{width: 526px;}
 .content2_right{width: 746px;}
 
-.content3_left{width: 636px;}/*about me*/
+.content3_left{width: 636px;}
 .content3_right{width: 526px;}
 
-.content4_left{width: 657px;}/*contact me*/
-.content4_right{width: 526px;}
+.content4_left{width: 657px;}
+.content4_right{width: 526px;} */
 
 .intxt{
 	margin:36px 0 32px ; /*上 左右 下! 請記得*/
@@ -141,14 +142,17 @@ ul{
 .navBtn{
 	padding: 0px 24px;
 }
-.s_item h2{
-	margin-bottom: 24px;
-}
 .s_item{
 	width: 306px;
-	padding:14px;
+	padding:24px;
 	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+	border: 1px solid #e3e3e3;
+	transition: transform 0.3s ease;
 } 
+.s_item:hover{
+	transform: scale(0.9);
+	background:#e3e3e3;
+}
 .lh1x{
 	line-height:44px;
 }
@@ -183,6 +187,7 @@ ul{
 	padding: 40px 0;
 }
 
+
 /* utils*/
 .d-inb{
 	display: inline-block;
@@ -212,7 +217,6 @@ ul{
 	align-items: flex-start;
 }
 .gap{gap: 24px;}
-
 .tac{text-align: center;}
 .tar{text-align: right;}
 .tal{text-align: left;}
@@ -234,7 +238,15 @@ ul{
 .mt28{
 	margin-top: 28px;
 }
-
+.col-6{
+	width:60%;
+}
+.col-5{
+	width:50%;
+}
+.col-4{
+	width: 40%;
+}
 /*色彩樣式*/
 .color-g{
 	color: #00FFA3;
@@ -245,6 +257,7 @@ ul{
 .color-w{
 	color: #fff;
 }
+/* 檢查用 */
 .red{
 	border: 1px solid red;
 }
